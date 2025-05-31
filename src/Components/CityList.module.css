@@ -1,0 +1,27 @@
+.cities {
+  width: 100%;
+}
+.cities ul {
+  width: 100%;
+  margin-top: -15px;
+  padding: 0;
+}
+.cities ul li {
+  width: 100%;
+  list-style: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  background: #42484d;
+  border-left: 5px solid #00c46a;
+  cursor: pointer;
+}
+.cities ul li:active {
+  border: 2px solid #00c46a;
+  border-left: 5px solid #00c46a;
+}
+.cities ul li span {
+  color: white;
+}
+.cities ul li a {
+  text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.AppNav a {
+  font-family: arial;
+  color: white;
+  font-size: 14px;
+  padding: 10px 25px;
+  background: #42484d;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.AppNav a:global(.active) {
+  background-color: #242a2e;
+}

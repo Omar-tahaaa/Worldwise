@@ -1,0 +1,8 @@
+.homePage {
+  background: linear-gradient(rgba(36, 42, 46, 0.8), rgba(36, 42, 46, 0.8)),
+    url("../assets/mountain.jpeg");
+  background-size: cover;
+  color: white;
+  height: 97.5vh;
+  padding: 20px 50px 0 50px;
+}

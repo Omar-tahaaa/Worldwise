@@ -1,0 +1,29 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 10px;
+}
+.details .cityName {
+  font-size: 14px;
+}
+.details .dateAndButton {
+  display: flex;
+  gap: 10px;
+}
+.details .dateAndButton span {
+  font-size: 14px;
+}
+.details .dateAndButton button {
+  background-color: #080710;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 1px 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.details .dateAndButton button:hover {
+  background-color: #00c46a;
+  color: #080710;
+}

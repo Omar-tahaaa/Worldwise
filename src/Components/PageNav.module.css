@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav img {
+  width: 220px;
+  height: 50px;
+}
+.nav .imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .list ul {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+.nav .list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav .list li a,
+.login {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+.nav .list li a:global(.active) {
+  color: #00c46a;
+}
+.login {
+  display: inline-block;
+  background-color: #00c46a;
+  color: #2d3439 !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

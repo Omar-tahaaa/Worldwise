@@ -1,0 +1,28 @@
+.pricingContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding: 60px 10px;
+}
+
+.pricingContainer img {
+  width: 400px;
+  height: 400px;
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ececec;
+}
+
+.pricing h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.pricing p {
+  width: 88%;
+  font-size: 2rem;
+  line-height: 3rem;
+}
