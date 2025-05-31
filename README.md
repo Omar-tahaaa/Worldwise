@@ -1,27 +1,3 @@
-## 🔧 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/worldwise.git
-cd worldwise ```
-
-### 2. Install dependencies
-
-npm install
-
-### 3. Run JSON Server (for backend)
-
-npx json-server --watch data/db.json --port 8000
-
-Make sure data/db.json exists and contains:
-{
-  "cities": []
-}
-### 4. Start the frontend
-
-npm run dev
-
 # 🌍 WorldWise
 
 **WorldWise** is a React-based travel tracker app that allows users to log cities they’ve visited by interacting with a world map. Built with performance, scalability, and modern frontend techniques in mind.
@@ -30,18 +6,18 @@ npm run dev
 
 ## 🚀 Features
 
-- ⚛️ Built with **React + Vite** for blazing-fast development and build times.
-- 🧠 **Context API + useReducer** for robust and scalable state management.
-- 🗺️ **Leaflet** for interactive maps and seamless zoom/pan experience.
-- 📍 Uses **Geolocation API** to detect and set the user’s current position.
-- ➕ Add new cities by clicking on the map to open a form and submit data.
-- 🔄 Full **CRUD operations** using **JSON Server** as a fake REST API.
-- 🔐 Simulated user authentication.
-- ♻️ Built with **custom React hooks** for clean code and reusability.
-- ⚡ Optimized with `useMemo` and `useCallback` for better performance.
-- ✂️ **Code splitting** to reduce initial bundle size and improve load speed.
-- 🌐 **React Router** for dynamic and client-side routing.
-- 🎨 Styled with **CSS Modules** for component-scoped CSS.
+- ⚛️ Built with **React + Vite** for fast development and builds
+- 🧠 **Context API + useReducer** for global state management
+- 🗺️ **Leaflet** for interactive map visualization
+- 📍 **Geolocation API** to detect and center on user's current location
+- 📝 Click on map to open a form and **add visited cities**
+- 🔄 **CRUD operations** using **JSON Server** as a mock backend
+- 🔐 Simulated fake authentication
+- ♻️ **Custom hooks** for clean and reusable logic
+- ⚡ **Performance optimization** with `useMemo` and `useCallback`
+- ✂️ **Code splitting** to optimize bundle size
+- 🧭 **React Router** for client-side routing
+- 🎨 Styled with **CSS Modules**
 
 ---
 
@@ -51,14 +27,33 @@ npm run dev
 - Context API & useReducer
 - React Router
 - Leaflet.js
-- CSS Modules
 - Geolocation API
 - JSON Server
-- Custom Hooks
+- CSS Modules
 - useMemo / useCallback
-- Code Splitting (lazy + Suspense)
+- Code Splitting
+- Custom Hooks
 
 ---
 
+## 🔧 Getting Started
 
+```bash
+1. Clone the repository
 
+git clone https://github.com/your-username/worldwise.git
+cd worldwise
+
+2. Install dependencies
+npm install
+
+3. Run JSON Server (Mock Backend)
+npx json-server --watch data/db.json --port 8000
+
+Ensure you have data/db.json with the following structure:
+{
+  "cities": []
+}
+
+4. Start the development server
+npm run dev
