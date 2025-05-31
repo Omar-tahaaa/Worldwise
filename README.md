@@ -4,8 +4,7 @@
 
 ```bash
 git clone https://github.com/your-username/worldwise.git
-cd worldwise
-
+cd worldwise ```
 
 ### 2. Install dependencies
 
