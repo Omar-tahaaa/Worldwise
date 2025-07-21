@@ -42,18 +42,15 @@
 1. Clone the repository
 
 git clone https://github.com/Omar-tahaaa/Worldwise.git
-cd worldwise
+cd Worldwise
 
 2. Install dependencies
 npm install
 
 3. Run JSON Server (Mock Backend)
-npx json-server --watch data/db.json --port 8000
-
-Ensure you have data/db.json with the following structure:
-{
-  "cities": []
-}
+json-server --watch data/cities.json --port 8000
+Make sure you have json-server installed globally.
+If not: npm install -g json-server
 
 4. Start the development server
 npm run dev
