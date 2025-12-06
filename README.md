@@ -2,8 +2,6 @@
 
 A modern travel tracking application that helps you keep track of all the cities you've visited around the world. Mark your adventures on an interactive map and create a personal travel diary!
 
-![WorldWise](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=WorldWise+Travel+Tracker)
-
 ## 🚀 Live Demo
 
 **[View Live Application](https://worldwise-a95e8.web.app)**
