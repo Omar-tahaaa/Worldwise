@@ -3,3 +3,15 @@
   height: 100vh;
   padding: 20px 50px 0 50px;
 }
+
+@media (max-width: 900px) {
+  .productPage {
+    padding: 15px 30px 0 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .productPage {
+    padding: 10px 20px 0 20px;
+  }
+}

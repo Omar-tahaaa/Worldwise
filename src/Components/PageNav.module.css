@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav img {
   width: 220px;
@@ -38,4 +39,47 @@
   color: #2d3439 !important;
   padding: 10px 20px;
   border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .nav img {
+    width: 180px;
+    height: 40px;
+  }
+
+  .nav .list ul {
+    gap: 25px;
+  }
+
+  .nav .list li a,
+  .login {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav img {
+    width: 160px;
+    height: 36px;
+  }
+
+  .nav .list ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav .list li a,
+  .login {
+    font-size: 13px;
+  }
+
+  .login {
+    padding: 8px 16px;
+  }
 }

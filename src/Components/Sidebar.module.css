@@ -1,12 +1,13 @@
 .sidebar {
   width: 35%;
   background-color: #2d3439;
-  height: calc(100vh - 105px);
+  height: 100%;
   padding: 3rem 5rem 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  overflow-y: auto;
 }
 
 .sidebar img {
@@ -15,4 +16,32 @@
 }
 .sidebar footer {
   margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    padding: 2rem 3rem;
+    gap: 25px;
+  }
+
+  .sidebar img {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    padding: 1.5rem 2rem;
+    gap: 20px;
+    max-height: 45vh;
+  }
+
+  .sidebar img {
+    width: 150px;
+    height: 35px;
+  }
 }

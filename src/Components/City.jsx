@@ -2,12 +2,16 @@ import { Link } from "react-router-dom";
 import { useCities } from "../Context/CitiesProvider";
 import styles from "./City.module.css";
 
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
+const formatDate = (date) => {
+  if (!date) return "No date";
+  const dateObj = new Date(date);
+  if (isNaN(dateObj.getTime())) return "Invalid date";
+  return new Intl.DateTimeFormat("en", {
     day: "numeric",
     month: "long",
     year: "numeric",
-  }).format(new Date(date));
+  }).format(dateObj);
+};
 
 function City({ city }) {
   const { deleteCity } = useCities();
@@ -23,7 +27,7 @@ function City({ city }) {
       <div className={styles.details}>
         <span className={styles.cityName}>{city.cityName}</span>
         <div className={styles.dateAndButton}>
-          <span>{formatDate(city.date) || null}</span>
+          <span>{formatDate(city.date)}</span>
           <button onClick={handleDelete}>&times;</button>
         </div>
       </div>

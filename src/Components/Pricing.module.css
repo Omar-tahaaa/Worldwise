@@ -3,11 +3,15 @@
   margin: 0 auto;
   width: 70%;
   padding: 60px 10px;
+  gap: 40px;
+  align-items: center;
 }
 
 .pricingContainer img {
   width: 400px;
   height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .pricing {
   display: flex;
@@ -25,4 +29,50 @@
   width: 88%;
   font-size: 2rem;
   line-height: 3rem;
+}
+
+@media (max-width: 900px) {
+  .pricingContainer {
+    width: 85%;
+    flex-direction: column-reverse;
+    padding: 40px 10px;
+    gap: 30px;
+  }
+
+  .pricingContainer img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .pricing h1 {
+    font-size: 3.5rem;
+  }
+
+  .pricing p {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricingContainer {
+    width: 95%;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .pricingContainer img {
+    max-width: 100%;
+  }
+
+  .pricing h1 {
+    font-size: 2.8rem;
+  }
+
+  .pricing p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }

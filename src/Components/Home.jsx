@@ -1,9 +1,7 @@
-import { useAuth } from "../Context/FakeAuthProvider";
-import styless from "./Home.module.css";
 import { Link } from "react-router-dom";
+import styless from "./Home.module.css";
 
 function Home() {
-  const { isAuthenticated } = useAuth();
   return (
     <section className={styless.home}>
       <h1>
@@ -15,7 +13,7 @@ function Home() {
         Never forget your wonderful experiences, and show your friends how you
         have wandered the world.
       </h2>
-      <Link to={isAuthenticated ? "app" : "login"}>start tracking now</Link>
+      <Link to="app">start tracking now</Link>
     </section>
   );
 }

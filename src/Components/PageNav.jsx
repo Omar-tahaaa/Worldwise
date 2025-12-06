@@ -17,11 +17,6 @@ function PageNav() {
           <li>
             <NavLink to="/product">product</NavLink>
           </li>
-          <li>
-            <NavLink to="/login" className={styless.login}>
-              login
-            </NavLink>
-          </li>
         </ul>
       </div>
     </div>

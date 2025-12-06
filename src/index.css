@@ -10,3 +10,22 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+/* Responsive font sizing */
+@media (max-width: 900px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

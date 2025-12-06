@@ -1,12 +1,15 @@
 form {
-  height: 340px;
-  width: 420px;
+  height: auto;
+  min-height: 340px;
+  width: 100%;
+  max-width: 420px;
   background-color: rgba(255, 255, 255, 0.13);
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 50px 35px;
+  margin: 0 auto;
 }
 .form * {
   font-family: "Poppins", sans-serif;
@@ -32,7 +35,7 @@ form {
 .form textarea {
   display: block;
   height: 50px;
-  width: 96%;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.07);
   border-radius: 6px;
   padding: 0 10px;
@@ -47,7 +50,7 @@ form {
   padding: 10px;
 }
 .form .datePikcer input {
-  width: 192%;
+  width: 100%;
 }
 .form ::placeholder {
   color: #e5e5e5;
@@ -55,10 +58,59 @@ form {
 .form .btns {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
 }
 .form .btns button {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  form {
+    max-width: 100%;
+    padding: 40px 30px;
+  }
+
+  .form h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .form h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .form label {
+    font-size: 14px;
+    margin: 12px 0 0 2px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 13px;
+    height: 45px;
+  }
+
+  .form textarea {
+    height: 70px;
+  }
+
+  .form .btns {
+    flex-direction: column;
+  }
+
+  .form .btns button {
+    width: 100%;
+  }
 }

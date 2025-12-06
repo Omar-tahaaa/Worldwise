@@ -52,3 +52,22 @@
   letter-spacing: 1px;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .city {
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .city h3 {
+    font-size: 1.7rem;
+  }
+
+  .city h3 span {
+    font-size: 2.8rem;
+  }
+
+  .city p {
+    font-size: 1.4rem;
+  }
+}

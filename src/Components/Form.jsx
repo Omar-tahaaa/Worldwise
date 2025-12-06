@@ -44,7 +44,7 @@ function Form() {
     e.preventDefault();
     addCity({
       cityName,
-      date,
+      date: date.toISOString(),
       notes,
       country,
       position: { lat: mapLat, lng: mapLng },
